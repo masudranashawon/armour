@@ -123,6 +123,7 @@ export const useGsapFeatureShutterThreeUnveil = (item) => {
 export const useGsapAboutHeading = (item, trig) => {
   useEffect(() => {
     const el = item.current;
+
     gsap.fromTo(
       el,
       {
@@ -226,6 +227,7 @@ export const useGsapAnsDetailsRef = (item, trig) => {
 export const useGsapGalleryImage = (item) => {
   useEffect(() => {
     const el = item.current;
+
     gsap.fromTo(
       el,
       {
@@ -251,6 +253,7 @@ export const useGsapGalleryImage = (item) => {
 export const useGsapGalleryTitle = (item, trig) => {
   useEffect(() => {
     const el = item.current;
+
     gsap.fromTo(
       el,
       {
@@ -274,6 +277,7 @@ export const useGsapGalleryTitle = (item, trig) => {
 export const useGsapGalleryCategory = (item, trig) => {
   useEffect(() => {
     const el = item.current;
+
     gsap.fromTo(
       el,
       {

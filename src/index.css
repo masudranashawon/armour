@@ -7,13 +7,36 @@
           Global CSS Starts 
 /////////////////////////////// */
 
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(10, 10, 10);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-lighter);
+  height: 10%;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-light);
+}
+
+::selection {
+  background-color: var(--color-black);
+  color: var(--color-lighter);
+}
+
 :root {
-  --color-primary: #d53f41;
   --color-dark: #626262;
   --color-darker: #464646;
   --color-light: #dbd8d6;
   --color-lighter: #f5f0ec;
-  --color-black: #000000;
+  --color-black: #2f2c30;
 }
 
 * {
@@ -81,7 +104,7 @@ img {
 .nav-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 2rem 0;
   font-family: "Syncopate", sans-serif;
   font-size: 1.5rem;
@@ -102,6 +125,7 @@ img {
   color: var(--color-lighter);
   position: relative;
   transition: 0.3s;
+  text-transform: lowercase;
 }
 
 .links a:hover {
@@ -139,8 +163,17 @@ img {
   justify-content: center;
   padding-top: 8px;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-
+.protect-your,
+.your-country {
+  font-size: 10vw;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .hero-btn {
   padding: 20px 40px;
   font-size: 1.5vw;
@@ -389,7 +422,6 @@ img {
   overflow: hidden;
   border-radius: 10px;
   position: relative;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .blog img {
@@ -491,6 +523,8 @@ img {
 
 .footer p {
   margin-bottom: 5rem;
+  text-transform: capitalize;
+  font-size: 1.8rem;
 }
 
 /* Not found page  */

@@ -16,15 +16,15 @@ const Hero = () => {
       ref={heroRef}
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1637947582297-24ccbef1bd19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1281&q=80')",
+          "url('https://images.unsplash.com/photo-1639322534617-51f7e2612f33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80')",
       }}
     >
       <div className='hero-content wrapper overlay'>
-        <h1 className='ethereal' ref={heroText1Ref}>
-          war is
+        <h1 className='protect-your' ref={heroText1Ref}>
+          Protect your
         </h1>
-        <h1 className='canvas' ref={heroText2Ref}>
-          Coming !
+        <h1 className='your-country' ref={heroText2Ref}>
+          Country !
         </h1>
         <button className='hero-btn' ref={heroBtnRef}>
           Be Ready
