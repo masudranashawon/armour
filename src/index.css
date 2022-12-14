@@ -443,7 +443,7 @@ img {
 .blog-overlay {
   position: absolute;
   width: 100%;
-  left: 0px;
+  left: 0;
   bottom: -53px;
   background-image: linear-gradient(to bottom, transparent, black);
   padding: 29px 15px 10px;
@@ -487,4 +487,95 @@ img {
   font-size: 5vw;
   text-transform: lowercase;
   color: var(--color-dark);
+}
+
+.footer p {
+  margin-bottom: 5rem;
+}
+
+/* Not found page  */
+.not-found h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 9vw;
+  font-family: "Bai Jamjuree", sans-serif;
+  line-height: 12rem;
+  padding-bottom: 28px;
+  color: crimson;
+}
+/* ///////////////////////////////
+          Local CSS Starts 
+/////////////////////////////// */
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .wrapper {
+    margin: 0 2.5vw;
+  }
+
+  section {
+    padding: 5vw 0;
+  }
+
+  .section-title {
+    padding-bottom: 2.5vw;
+  }
+
+  .nav-content {
+    padding: 1rem 0;
+    flex-direction: column;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    order: -1;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+    grid-template-areas:
+      "f1 "
+      "f2 "
+      "f3";
+  }
+
+  .about-content {
+    gap: 5rem;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .gallery-item {
+    width: 55%;
+    margin: auto;
+  }
+
+  .blog-section {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    padding: 2rem;
+  }
+
+  .blog {
+    border-radius: 5px;
+    margin: 5rem 0;
+  }
 }

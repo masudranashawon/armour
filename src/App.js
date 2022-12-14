@@ -20,7 +20,7 @@ const App = () => {
         <Route path='/featured' element={<Featured />} />
         <Route path='/about' element={<About />} />
         <Route path='/gallery' element={<Gallery />} />
-        <Route path='/blog' element={<Blog needFullHeight={true} />} />
+        <Route path='/blog' element={<Blog />} />
         <Route path='*' element={<NotFound needFullHeight={true} />} />
       </Routes>
       <Footer />

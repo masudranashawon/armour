@@ -3,7 +3,11 @@ const NotFound = ({ needFullHeight }) => {
     <section
       className={`${needFullHeight && "min-h-scrren"} not-found wrapper`}
     >
-      <h2 className='section-title'>Not Found</h2>
+      <h1>
+        404
+        <br />
+        Not Found
+      </h1>
     </section>
   );
 };
