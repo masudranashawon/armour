@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { useGsapHeroTextUpStagger } from "../hooks/gsap";
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
           "url('https://images.unsplash.com/photo-1637947582297-24ccbef1bd19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1281&q=80')",
       }}
     >
-      <div className='hero-content wrapper'>
+      <div className='hero-content wrapper overlay'>
         <h1 className='ethereal' ref={heroText1Ref}>
           war is
         </h1>

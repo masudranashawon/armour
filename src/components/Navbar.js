@@ -6,9 +6,10 @@ const Navbar = () => {
   const li1 = useRef(null);
   const li2 = useRef(null);
   const li3 = useRef(null);
+  const li4 = useRef(null);
   const logoRef = useRef(null);
 
-  const liArr = [li1, li2, li3];
+  const liArr = [li1, li2, li3, li4];
   const logoArr = [logoRef];
 
   useGsapDownStagger(liArr, 0.8);
@@ -31,6 +32,9 @@ const Navbar = () => {
           </li>
           <li className='link' ref={li3}>
             <Link to='/gallery'>Gallery</Link>
+          </li>
+          <li className='link' ref={li4}>
+            <Link to='/blog'>Blog</Link>
           </li>
         </ul>
       </div>

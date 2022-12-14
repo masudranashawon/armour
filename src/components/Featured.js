@@ -18,7 +18,7 @@ const Featured = () => {
     <section className='featured wrapper' ref={featuredRef}>
       <h2 className='section-title'>Featured</h2>
       <div className='features'>
-        <div className='feature-one'>
+        <div className='feature feature-one'>
           <span className='feature-text'>Grey Jet Plane</span>
           <img
             src='https://images.pexels.com/photos/76971/fighter-jet-fighter-aircraft-f-16-falcon-aircraft-76971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -26,7 +26,7 @@ const Featured = () => {
           />
           <span className='feature-one-shutter' ref={featureOneShutter}></span>
         </div>
-        <div className='feature-two'>
+        <div className='feature feature-two'>
           <span className='feature-text'>Military Vehicle</span>
           <img
             src='https://images.pexels.com/photos/2668654/pexels-photo-2668654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -34,7 +34,7 @@ const Featured = () => {
           />
           <span className='feature-two-shutter' ref={featureTwoShutter}></span>
         </div>
-        <div className='feature-three'>
+        <div className='feature feature-three'>
           <span className='feature-text'>Military Woman</span>
           <img
             src='https://images.pexels.com/photos/4964929/pexels-photo-4964929.jpeg?auto=compress&cs=tinysrgb&w=600emp'
