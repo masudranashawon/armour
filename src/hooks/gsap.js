@@ -72,7 +72,7 @@ export const useGsapFeatureShutterOneUnveil = (item, trig) => {
   }, []);
 };
 
-export const useGsapFeatureShutterTwoUnveil = (item, trig) => {
+export const useGsapFeatureShutterTwoUnveil = (item) => {
   useEffect(() => {
     const el = item.current;
 
@@ -86,7 +86,7 @@ export const useGsapFeatureShutterTwoUnveil = (item, trig) => {
         duration: 1.3,
         ease: Expo.easeInOut,
         scrollTrigger: {
-          trigger: trig.current,
+          trigger: el,
           start: "top center",
           end: "bottom center",
           toggleActions: "play reverse play reverse",
@@ -232,11 +232,13 @@ export const useGsapGalleryImage = (item) => {
       el,
       {
         x: 0,
-        width: 0,
+        scale: 0.5,
+        opacity: 0,
       },
       {
+        opacity: 1,
         x: "30%",
-        width: "100%",
+        scale: 1,
         duration: 1,
         ease: Expo.easeInOut,
         scrollTrigger: {

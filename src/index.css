@@ -364,12 +364,16 @@ img {
 }
 
 .gallery-wrapper {
-  background-color: var(--color-dark);
+  background: linear-gradient(rgba(47, 44, 48, 0.7), rgba(47, 44, 48, 0.7)),
+    url(../public/army-bg.webp);
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 10vw;
   padding: 10vw;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover;
 }
 
 .gallery-item {
@@ -533,10 +537,27 @@ img {
   padding-top: 50px;
   font-size: 9vw;
   font-family: "Bai Jamjuree", sans-serif;
-  line-height: 12rem;
+  line-height: 2rem;
   padding-bottom: 28px;
   color: crimson;
 }
+
+.not-found p {
+  text-align: center;
+  font-size: 5.5vw;
+  font-family: "Bai Jamjuree", sans-serif;
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.not-found img {
+  width: 9vw;
+}
+
+.not-found span {
+  display: inline-block;
+}
+
 /* ///////////////////////////////
           Local CSS Starts 
 /////////////////////////////// */
@@ -561,6 +582,7 @@ img {
   .nav-content {
     padding: 1rem 0;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .links {

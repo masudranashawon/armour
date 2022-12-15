@@ -11,7 +11,7 @@ const Featured = () => {
   const featureTwoShutter = useRef(null);
   const featureThreeShutter = useRef(null);
   useGsapFeatureShutterOneUnveil(featureOneShutter, featuredRef);
-  useGsapFeatureShutterTwoUnveil(featureTwoShutter, featureThreeShutter);
+  useGsapFeatureShutterTwoUnveil(featureTwoShutter);
   useGsapFeatureShutterThreeUnveil(featureThreeShutter);
 
   return (
