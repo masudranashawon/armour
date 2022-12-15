@@ -167,6 +167,7 @@ img {
   background-position: center;
   background-size: cover;
 }
+
 .protect-your,
 .your-country {
   font-size: 10vw;
@@ -174,6 +175,7 @@ img {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .hero-btn {
   padding: 20px 40px;
   font-size: 1.5vw;
@@ -559,7 +561,7 @@ img {
 }
 
 /* ///////////////////////////////
-          Local CSS Starts 
+      Responsive CSS Starts 
 /////////////////////////////// */
 
 @media only screen and (max-width: 768px) {
