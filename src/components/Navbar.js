@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useGsapDownStagger } from "../hooks/gsap";
 
 const Navbar = () => {
@@ -15,26 +15,38 @@ const Navbar = () => {
   useGsapDownStagger(liArr, 0.8);
   useGsapDownStagger(logoArr, 1.3);
 
+  const navActiveStyle = ({ isActive }) => {
+    return { color: isActive ? "var(--color-dark)" : null };
+  };
+
   return (
     <nav className='navbar'>
       <div className='nav-content wrapper'>
         <div className='logo' ref={logoRef}>
-          <Link to='/'>
+          <NavLink to='/'>
             <h2>armour</h2>
-          </Link>
+          </NavLink>
         </div>
         <ul className='links'>
           <li className='link' ref={li1}>
-            <Link to='/featured'>Featured</Link>
+            <NavLink to='/featured' style={navActiveStyle}>
+              Featured
+            </NavLink>
           </li>
           <li className='link' ref={li2}>
-            <Link to='/about'>About</Link>
+            <NavLink to='/about' style={navActiveStyle}>
+              About
+            </NavLink>
           </li>
           <li className='link' ref={li3}>
-            <Link to='/gallery'>Gallery</Link>
+            <NavLink to='/gallery' style={navActiveStyle}>
+              Gallery
+            </NavLink>
           </li>
           <li className='link' ref={li4}>
-            <Link to='/blog'>Blog</Link>
+            <NavLink to='/blog' style={navActiveStyle}>
+              Blog
+            </NavLink>
           </li>
         </ul>
       </div>

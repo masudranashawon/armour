@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.0490750e.css",
-    "main.js": "/static/js/main.29422103.js",
+    "main.js": "/static/js/main.0aa8c5f2.js",
     "static/media/army-bg.webp": "/static/media/army-bg.f4507d2d254119861084.webp",
     "index.html": "/index.html",
     "main.0490750e.css.map": "/static/css/main.0490750e.css.map",
-    "main.29422103.js.map": "/static/js/main.29422103.js.map"
+    "main.0aa8c5f2.js.map": "/static/js/main.0aa8c5f2.js.map"
   },
   "entrypoints": [
     "static/css/main.0490750e.css",
-    "static/js/main.29422103.js"
+    "static/js/main.0aa8c5f2.js"
   ]
 }
